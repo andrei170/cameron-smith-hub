@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Funnel Blueprint · For Cazza · AG1</title>
-<meta name="description" content="Funnel Blueprint - built for Cameron 'Cazza' Smith by AG1 Consulting.">
+<title>Funnel Blueprint · For Cameron · AG1</title>
+<meta name="description" content="Funnel Blueprint - built for Cameron Smith by AG1 Consulting.">
 <meta name="robots" content="noindex">
-<meta property="og:title" content="Funnel Blueprint · For Cazza">
+<meta property="og:title" content="Funnel Blueprint · For Cameron">
 <meta property="og:description" content="Part of the funnel audit + less-than-7-day install plan built for @cazza_time by AG1 Consulting.">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
@@ -22,14 +22,14 @@
 <nav class="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
-    <span class="nav-title">For Cazza · AG1</span>
+    <span class="nav-title">For Cameron · AG1</span>
   </div>
 </nav>
 
 <article class="doc">
   <header class="doc-header">
     <span class="doc-tag">Architecture</span>
-    <h1>Funnel Blueprint - Cameron 'Cazza' Smith</h1>
+    <h1>Funnel Blueprint - Cameron "Cazza" Smith</h1>
   </header>
 
   
@@ -39,51 +39,53 @@
 <hr />
 <h2>Funnel diagram</h2>
 <pre><code>TikTok @cazzatime (434K) ─┐
-IG @cazza_time (118K)     ├──&gt; beacons.ai/cazzatime ──&gt; &quot;UK Money Score&quot; Quiz ──&gt; Email list (owned)
-YouTube channel           │                                       │
-Bank of England / Press   ┘                                       v
-                                                          Segmented nurture (8 touch)
-                                                                  │
-                                                                  v
-                                                Gen Z Finance Operator Mentorship
-                                                  (8-week cohort, £1.5K-£4K)
-                                                                  │
-                                          ┌───────────────────────┼───────────────────────┐
-                                          v                       v                       v
-                              Cazza Members £19/mo         Sponsorship layer        Post-cohort upsell
-                                (recurring ARR)           (HSBC-style, continues)    (1:1 / advanced)
+IG @cazza_time (118K)     ├─&gt; beacons.ai/cazzatime ─&gt; &quot;ISA + Tax Allowance Audit&quot; Scorecard ─&gt; Email list (owned)
+YouTube channel           │                                          │
+Bank of England content   ┘                                          v
+                                                          Segmented nurture (4 touch / 7d)
+                                                                     │
+                                          ┌──────────────────────────┼──────────────────────────┐
+                                          v                          v                          v
+                                  Money School Course        Cazza Time Cohort           Cazza Members
+                                  (£47-£97 self-paced)     (£197-£497, 6-week live)        (£8/mo)
+                                                                     │
+                                                                     v
+                                                       Sponsorship layer (HSBC, Experian, XTB)
+                                                          continues, sits above the ladder
 </code></pre>
 <h2>Phase mapping</h2>
-<h3>Phase One - Days 1-3 - Quiz + Email Capture Live</h3>
+<h3>Phase One - Days 1-3 - Scorecard + Email Capture Live</h3>
 <ul>
-<li>"UK Money Score" quiz built on ScoreApp / Typeform (12 questions, returns 0-100, segments by ISA / debt / investing readiness)</li>
-<li>beacons.ai/cazzatime updated - quiz becomes the primary CTA above sponsor links</li>
-<li>Quiz embed live on a custom Cazza-owned page (cazzatime.co.uk/score or similar)</li>
-<li>Email capture wired to ConvertKit / Beehiiv</li>
-<li>4-touch quiz-result nurture sequence segmented by score band (0-30 = beginner, 31-65 = intermediate, 66+ = advanced)</li>
+<li>"ISA + Tax Allowance Audit" scorecard built on ScoreApp / Typeform (12 questions, returns 0-100, segments by ISA usage / debt / investing readiness / life stage)</li>
+<li>beacons.ai/cazzatime updated, scorecard becomes the primary CTA above sponsor links</li>
+<li>Scorecard embed live on a Cazza-owned page (cazzatime.co.uk/score or similar)</li>
+<li>Email capture wired to Beehiiv or ConvertKit</li>
+<li>4-touch scorecard-result nurture sequence segmented by score band (0-30 = Money School, 31-65 = course or cohort decision, 66+ = cohort-ready)</li>
 </ul>
-<h3>Phase Two - Days 4-7 - Mentorship Landing + Application Live</h3>
+<h3>Phase Two - Days 4-7 - Course + Cohort Landing Live</h3>
 <ul>
-<li>Gen Z Finance Operator Mentorship landing page deployed (this build = sample)</li>
+<li>Money School course landing page deployed (£47 standard, £97 with private Q&amp;A access)</li>
+<li>Cazza Time Cohort landing page deployed (this build = sample), £197-£497 with cohort cap of 100</li>
 <li>Hero VSL embedded (Mr MoneyJar EP 104 as Day-1 placeholder, swap to custom 4-min Cazza VSL on Day 7)</li>
-<li>Typeform application live (4-minute form, direct enrolment on submit)</li>
-<li>Stripe + payment auto-trigger on enrolment</li>
+<li>Typeform application live for cohort (4-minute form, direct enrolment on submit)</li>
+<li>Stripe + payment auto-trigger on enrolment for both course and cohort</li>
 <li>Pre-cohort welcome flow (3 touches) + cohort kickoff sequence</li>
-<li>Brand colours locked to Cazza's palette (Day 1 fix - couldn't extract cleanly from beacons)</li>
+<li>Brand colours locked to Cazza's palette (Day 1 fix, could not extract cleanly from beacons)</li>
+<li>FCA "education and information" disclaimer locked into footer</li>
 </ul>
 <h3>Phase Three - Post-install - Cazza Members + Recurring</h3>
 <ul>
-<li>£19/mo Cazza Members private community (Skool or Circle)</li>
-<li>Monthly Q&amp;A vault, sponsor-product matchmaking digest, early-access cohort priority</li>
+<li>£8/mo Cazza Members private community (Skool or Circle)</li>
+<li>Monthly Q&amp;A, sponsor-product breakdown digest, early-access cohort priority</li>
 <li>Welcome flow + retention sequence</li>
-<li>Cross-promotion in cohort (mentorship grads default into Members)</li>
+<li>Cross-promotion in cohort (cohort grads default into 90-day free Members trial)</li>
 </ul>
 <h3>Phase Four - Post-install - Paid Traffic</h3>
 <ul>
 <li>Pixel + GA4 + retargeting tags installed and firing</li>
 <li>Top-performing organic TikToks repurposed as Meta + TikTok ads</li>
-<li>Retargeting campaigns for landing-page abandons + quiz starts who didn't complete</li>
-<li>Cold campaigns to UK Gen Z lookalikes of mentorship buyers</li>
+<li>Retargeting campaigns for landing-page abandons + scorecard starts who did not complete</li>
+<li>Cold campaigns to UK Gen Z lookalikes of course buyers</li>
 </ul>
 <h2>Tech stack</h2>
 <table>
@@ -96,17 +98,17 @@ Bank of England / Press   ┘                                       v
 </thead>
 <tbody>
 <tr>
-<td>Quiz</td>
+<td>Scorecard</td>
 <td>ScoreApp or Typeform</td>
 <td>Native UK, returns score, segments cleanly</td>
 </tr>
 <tr>
 <td>Email</td>
 <td>Beehiiv or ConvertKit</td>
-<td>UK creator-friendly, segmentation by tag</td>
+<td>UK creator-friendly, segmentation by tag, newsletter monetisation built in</td>
 </tr>
 <tr>
-<td>Landing page</td>
+<td>Landing pages</td>
 <td>Static HTML on GitHub Pages or Webflow</td>
 <td>Fast, no CMS bloat, Cazza-owned</td>
 </tr>
@@ -121,19 +123,24 @@ Bank of England / Press   ┘                                       v
 <td>UK native, Apple Pay / GPay built in</td>
 </tr>
 <tr>
+<td>Course host</td>
+<td>Skool or Kajabi</td>
+<td>Cohort + course + Members all live in same stack</td>
+</tr>
+<tr>
 <td>Community</td>
-<td>Skool or Circle</td>
-<td>Cohort + Members both live in same stack</td>
+<td>Skool</td>
+<td>Low-overhead moderation, single Members tier</td>
 </tr>
 <tr>
 <td>Recurring billing</td>
 <td>Stripe + Skool integration</td>
-<td>Members £19/mo handled natively</td>
+<td>Members £8/mo handled natively</td>
 </tr>
 <tr>
 <td>Pixel / analytics</td>
 <td>Plausible (privacy-first, GDPR-clean) + Meta + TikTok pixels</td>
-<td>Bank of England credibility = privacy-conscious analytics</td>
+<td>Privacy-conscious analytics matches the educator-tone brand</td>
 </tr>
 <tr>
 <td>Cohort delivery</td>
@@ -144,13 +151,14 @@ Bank of England / Press   ┘                                       v
 </table>
 <h2>Integration points</h2>
 <ul>
-<li><strong>TikTok / IG bio link:</strong> beacons.ai/cazzatime updated to push quiz first, sponsors second</li>
-<li><strong>Quiz to email:</strong> ScoreApp/Typeform webhook -&gt; Beehiiv tag by score band</li>
-<li><strong>Email to mentorship landing:</strong> quiz-result nurture sequence ends with mentorship CTA</li>
-<li><strong>Mentorship landing to Stripe:</strong> Typeform application submit -&gt; Stripe Checkout with cohort SKU</li>
-<li><strong>Stripe to Skool:</strong> webhook auto-adds buyer to cohort cohort space</li>
-<li><strong>Members £19/mo:</strong> Stripe subscription -&gt; Skool Members tier</li>
-<li><strong>Pixel coverage:</strong> quiz start, quiz complete, mentorship landing view, application start, application complete, Stripe purchase</li>
+<li><strong>TikTok / IG bio link:</strong> beacons.ai/cazzatime updated to push scorecard first, sponsors second</li>
+<li><strong>Scorecard to email:</strong> ScoreApp / Typeform webhook -&gt; Beehiiv tag by score band + life stage</li>
+<li><strong>Email to course / cohort landing:</strong> scorecard-result nurture ends with the right CTA per score band (course for 0-30, course-or-cohort for 31-65, cohort for 66+)</li>
+<li><strong>Cohort landing to Stripe:</strong> Typeform application submit -&gt; Stripe Checkout with cohort SKU</li>
+<li><strong>Course landing to Stripe:</strong> Stripe Checkout direct on Money School page (no application required)</li>
+<li><strong>Stripe to Skool:</strong> webhook auto-adds buyer to course or cohort space</li>
+<li><strong>Members £8/mo:</strong> Stripe subscription -&gt; Skool Members tier</li>
+<li><strong>Pixel coverage:</strong> scorecard start, scorecard complete, course / cohort landing view, application start, application complete, Stripe purchase, Members signup</li>
 </ul>
 <h2>Deliverables that get shipped</h2>
 <table>
@@ -164,27 +172,27 @@ Bank of England / Press   ┘                                       v
 <tbody>
 <tr>
 <td>Day 1</td>
-<td>Quiz live + brand colours locked + email list provisioned</td>
+<td>Scorecard live + brand colours locked + email list provisioned</td>
 <td>AG1</td>
 </tr>
 <tr>
 <td>Day 2</td>
-<td>Quiz-result nurture sequence (4 touches) live</td>
+<td>Scorecard-result nurture sequence (4 touches) live</td>
 <td>AG1</td>
 </tr>
 <tr>
 <td>Day 3</td>
-<td>beacons.ai/cazzatime updated with quiz CTA</td>
+<td>beacons.ai/cazzatime updated with scorecard CTA</td>
 <td>AG1 + Cazza</td>
 </tr>
 <tr>
 <td>Day 4</td>
-<td>Mentorship landing page live + Typeform application</td>
+<td>Money School + Cazza Time Cohort landing pages live + Typeform application</td>
 <td>AG1</td>
 </tr>
 <tr>
 <td>Day 5</td>
-<td>Stripe + Skool wired - first apply-to-enrol flow tested end-to-end</td>
+<td>Stripe + Skool wired, first apply-to-enrol flow tested end-to-end</td>
 <td>AG1</td>
 </tr>
 <tr>
@@ -194,17 +202,19 @@ Bank of England / Press   ┘                                       v
 </tr>
 <tr>
 <td>Day 7</td>
-<td>First mentorship cohort intake opens. Money in the bank.</td>
+<td>First cohort intake opens, Money School live for purchase. Money in the bank.</td>
 <td>Cazza</td>
 </tr>
 </tbody>
 </table>
 <h2>Post-install scaling</h2>
 <ul>
-<li>Cohort cadence: quarterly intakes, capped at 150 (waitlist nurture between)</li>
-<li>Members £19/mo: launches Day 30 post-cohort 1 close</li>
-<li>Paid traffic: Day 60 onward, after quiz + mentorship organic conversion baseline established</li>
-<li>Sponsorship layer: untouched - mentorship sits above, sponsors continue</li>
+<li>Course (Money School) is always-on at £47-£97, no intake limits</li>
+<li>Cohort cadence: quarterly intakes, capped at 100 (waitlist nurture between)</li>
+<li>Cazza Members: launches Day 30 post-cohort 1 close at £8/mo</li>
+<li>Paid traffic: Day 60 onward, after scorecard + course + cohort organic conversion baseline established</li>
+<li>Sponsorship layer: untouched. The course / cohort / Members ladder sits above sponsor work; sponsors continue at current run-rate</li>
+<li>Newsletter monetisation: tested in Year-2 once list is at 30K+ subscribers</li>
 </ul>
 
   <footer class="doc-footer">
